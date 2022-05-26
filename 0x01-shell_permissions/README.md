@@ -1,1 +1,1 @@
-$ wc -l 1-who_am_i
+My name
