@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-
 # Configure my domain zone:
 # www --> 914-lb-01 3.83.192.251
 # web-01 --> 914-web-01 18.205.38.219
 # web-02 --> 914-web-02 34.138.16.188
-
 
 # -- To be evaluated --
 # domain_information () {
@@ -23,7 +21,6 @@
 #   domain_information "$1" "$2"
 # fi
 #-- To be evaluated --
-
 
 subdomains_all=( "www" "lb-01" "web-01" "web-02" )
 
