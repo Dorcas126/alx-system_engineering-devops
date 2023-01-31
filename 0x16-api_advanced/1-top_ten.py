@@ -9,7 +9,6 @@ def top_ten(subreddit):
     base_url = 'http://reddit.com/r/{}/hot.json?limit=10'.format(subreddit)
     headers = {'User-agent': 'colombiandreamm'}
 
-
     res = requests.get(base_url, headers=headers)
     if res.status_code == 200:
         top = res.json()
