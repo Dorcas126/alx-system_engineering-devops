@@ -3,14 +3,11 @@
 Function that queries the Reddit API and prints
 the top ten hot posts of a subreddit
 """
-
 import requests
-
 
 def sort_histogram(histogram={}):
     '''Sorts and prints the given histogram.
     '''
-
     histogram = list(filter(lambda kv: kv[1], histogram))
     histogram_dict = {}
     for item in histogram:
@@ -22,7 +19,6 @@ def sort_histogram(histogram={}):
     histogram.sort(
         key=lambda kv: kv[0],
         reverse=False
-
     )
     histogram.sort(
         key=lambda kv: kv[1],
@@ -40,7 +36,6 @@ def count_words(subreddit, word_list, histogram=[], n=0, after=None):
     '''Counts the number of times each word in a given wordlist
     occurs in a given subreddit.
     '''
-
     api_headers = {
         'Accept': 'application/json',
         'User-Agent': ' '.join([
